@@ -1,0 +1,18 @@
+.btn {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #000000;
+
+    &:hover {
+        color: inherit;
+    }
+}
