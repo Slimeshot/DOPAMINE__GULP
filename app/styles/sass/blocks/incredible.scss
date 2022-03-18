@@ -1,0 +1,373 @@
+.incredible {
+    padding: 8em 0;
+    font-size: 10px;
+    @media (max-width: 1440px) {
+        font-size: 0.69vw;
+    }
+    @media (max-width: 1024px) {
+        font-size: 1.3vw;
+    }
+    @media (max-width: 540px) {
+        font-size: 2.75vw;
+        padding: 4em 0 8em 0;
+    }
+    .container {
+    }
+}
+.incredible__container {
+    
+}
+.incredible__info {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    margin-bottom: 8.8em;
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1.3fr 1fr;
+        margin-bottom: 8em;
+    }
+    @media (max-width: 540px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr;
+        margin-bottom: 4em;
+    }
+}
+.incredible__title {
+    grid-column: 2 / 6;
+    font-family: 'Stolzl';
+    font-weight: 500;
+    font-size: 6.8em;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #000000;
+    @media (max-width: 1024px) {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+        font-size: 6.4em;
+    }
+    @media (max-width: 540px) {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        font-size: 3.4em;
+    }
+}
+.incredible__group {
+    display: flex;
+    align-items: center;
+    div {
+        font-size: 10px;
+        @media (max-width: 1440px) {
+            font-size: 0.69vw;
+        }
+        height: 5em;
+        display: flex;
+        width: 100%;
+
+        .a1 {
+            height: 100%;
+            width: 1em;
+            background-color: black;
+            margin-left: 0.4em;            
+        }
+        .a2 {
+            height: 100%;
+            width: 2.4em;
+            background-color: black;
+            margin-left: 0.4em;
+        }
+        .a3 {
+            height: 100%;
+            width: 4em;
+            background-color: black;
+            margin-left: 0.4em;
+        }
+        .a4 {
+            height: 100%;
+            width: 4.8em;
+            background-color: black;
+            margin-left: 0.4em;
+        }
+        .a5 {
+            height: 100%;
+            width: 6.8em;
+            background-color: black;
+            margin-left: 0.4em;  
+        }
+
+    }
+    @media (max-width: 1024px) {
+        div {
+            font-size: 1.3vw;
+            .a1 {
+                width: 0.9em;
+                margin-left: 0.6em;            
+            }
+            .a2 {
+                width: 2.1em;
+                margin-left: 0.6em;
+            }
+            .a3 {
+                width: 3.6em;
+                margin-left: 0.6em;
+            }
+            .a4 {
+                width: 4.4em;
+                margin-left: 0.6em;
+            }
+            .a5 {
+                width: 5.9em;
+                margin-left: 0.6em;  
+            }
+        }
+    }
+    @media (max-width: 540px) {
+        div {
+            height: 2.5em;
+            font-size: 2.75vw;
+            .a1 {
+                width: 0.5em;
+                margin-left: 0.2em;            
+            }
+            .a2 {
+                width: 1.2em;
+                margin-left: 0.2em;
+            }
+            .a3 {
+                width: 2em;
+                margin-left: 0.2em;
+            }
+            .a4 {
+                width: 2.4em;
+                margin-left: 0.2em;
+            }
+            .a5 {
+                width: 3.3em;
+                margin-left: 0.2em;  
+            }
+        }
+    }
+}
+.incredible__desc {
+    @media (max-width: 1024px) {
+        grid-column: 7 / 9;
+        grid-row: 1 / 2;
+        object-fit: cover;
+        justify-self: flex-end;
+        height: auto;
+        width: 9.6em;
+    }
+    @media (max-width: 540px) {
+        display: none;
+    }
+}
+.incredible__rectangle {
+    grid-column: 6 / 7;
+    object-fit: cover;
+    height: auto;
+    width: 11.4em;
+    @media (max-width: 1024px) {
+        grid-column: 5 / 7;
+        grid-row: 1 / 2;
+        justify-self: flex-end;
+        margin-right: 1em;
+    }
+    @media (max-width: 540px) {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+        width: 6.2em;
+        justify-self: center;
+        margin-right: 0em;
+    }
+}
+.incredible__circle {
+    grid-column: 7 / 8;
+    justify-self: center;
+    object-fit: cover;
+    height: auto;
+    width: 5.7em;
+    @media (max-width: 1024px) {
+        grid-column: 7 / 8;
+        grid-row: 1 / 2;
+        justify-self: flex-start;
+        margin-left: 1em;
+    }
+    @media (max-width: 540px) {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        width: 3.1em;
+        justify-self: flex-end;
+        margin-left: 0
+    }
+}
+.incredible__subtitle {
+    grid-column: 8 / 12;
+    font-family: 'Stolzl';
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    color: #000000;
+    border-right: 1px solid #000;
+    span {
+        div {
+            display: none;
+        }
+    }
+    @media (max-width: 1024px) {
+        grid-column: 1 / 9;
+        grid-row: 2 / 3;
+        border-right: none;
+        font-size: 1.4em;
+        br {
+            display: none;
+        }
+        span {
+            display: flex;
+            align-items: center;
+            div {
+                display: inline-block;
+                background-color: #DDD;
+                flex: 1;
+                height: 12px;
+                margin-left: 5px;
+            }
+        }
+    }
+    @media (max-width: 540px) {
+        margin-top: 2em;
+    }
+
+}
+
+
+
+
+.incredible__menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 116em;
+}
+.incredible__user {
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity .2s ease;
+    pointer-events: none;
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+.incredible__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 3.2em 0;
+    border-bottom: 1px solid #000;
+    transition: background-color .2s ease;
+    position: relative;
+    &:first-child {
+        border-top: 1px solid #000;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        transition: background-color .2s ease;
+        pointer-events: none;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -100%; 
+        height: 100%;
+        width: 100%;
+        transition: background-color .2s ease;
+        pointer-events: none;
+
+    }
+    &:hover {
+        background-color: $accent;
+        &:before {
+            background-color: $accent;
+        }
+        &:after {
+            background-color: $accent;
+        }
+        .incredible__img {
+            opacity: 1;
+        }
+        .incredible__user { 
+            opacity: 1;
+        }
+    }
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+    }
+    @media (max-width: 540px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+.incredible__img {
+    grid-column: 10 / 11;
+    justify-self: flex-end;
+    opacity: 0;
+    transition: opacity .2s ease;
+    img {
+        width: 2.4em;
+        height: 2.4em;
+        margin-left: 1em;
+    }
+    @media (max-width: 1024px) {
+        grid-column: 7 / 9;
+        grid-row: 1 / 2;
+        opacity: 1;
+    }
+    @media (max-width: 540px) {
+        display: none;
+    }
+}
+.incredible__name {
+    grid-column: 1 / 3;
+    font-family: 'Stolzl Display';
+    font-weight: 500;
+    font-size: 1.6em;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    color: #000000;
+    @media (max-width: 1024px) {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2
+    }
+    @media (max-width: 540px) {
+        font-size: 1.4em;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2
+    }
+}
+.incredible__prof {
+    grid-column: 4 / 10;
+    font-family: 'Stolzl Display';
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    color: #000000;
+    @media (max-width: 1024px) {
+        grid-column: 5 / 9;
+        grid-row: 1 / 2
+    }
+    @media (max-width: 540px) {
+        font-size: 1.4em;
+        grid-column: 3 / 5;
+        grid-row: 1 / 2
+    }
+}

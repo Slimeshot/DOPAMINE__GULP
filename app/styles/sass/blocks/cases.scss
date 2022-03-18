@@ -21,8 +21,8 @@
     padding: 11px 16px;
     background-color: $accent;
     font-family: 'Stolzl';
-    font-style: normal;
-    font-weight: 400;
+    font-style: medium;
+    font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
@@ -31,6 +31,7 @@
     transform: rotate(90deg);
     display: flex;
     align-items: center;
+    z-index: 5;
     img {
         margin: 0 8px;
         transform: rotate(-90deg);
@@ -55,6 +56,18 @@
     }
 }
 .cases__row {
+}
+.cases__mask {
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-color: rgba(83, 53, 213, 0.15);
+    }
 }
 .cases__detective {
     grid-column: 1 / 7;
@@ -165,8 +178,7 @@
 
 .cases__text {
     font-family: 'Stolzl';
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.4em;
     line-height: 1.5em;
     color: #000000;
@@ -279,8 +291,7 @@
 }
 .cases__name {
     font-family: 'Stolzl Display';
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1.4em;
     line-height: 1.1em;
     text-transform: uppercase;
